@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--这是一段注释。注释不会在浏览器中显示。-->
+
+<html>
+<head>
+<style type="text/css">
+
+    div#container{width:500px}
+    div#header {background-color:#99bbbb;}
+    div#menu {background-color:#ffff99; height:200px; width:100px; float:left;}
+    div#content {background-color:#EEEEEE; height:200px; width:800px; float:left;}
+    div#footer {background-color:#99bbbb; clear:both; text-align:center;}
+    h1 {margin-bottom:0; font-size: 96px}
+    h2 {margin-bottom:0; font-size:14px;}
+    ul {margin:0;}
+    li {list-style:none;}
+    h1#time {font-size: 128}
+
+    div#timer span {
+    font-weight:bold;
+    color:#ff9955;
+    font-size:48;
+    }
+
+</style>
+    
+<script>
+
+function startTime()
+{
+    var today=new Date()
+    var year = today.getFullYear()
+    var month = today.getMonth()
+    var date = today.getDate()
+
+    var h=today.getHours()
+    var m=today.getMinutes()
+    var s=today.getSeconds()
+    // add a zero in front of numbers<10
+    m=checkTime(m)
+    s=checkTime(s)
+    document.getElementById('Time').innerHTML="<h1 align = 'center'>" + h+":"+m+":"+s + "</h1>"
+    document.getElementById('Date').innerHTML="<h5 align = 'center'>" + month+"月"+date +"日"+ "  " + getWeek(today) + "</h5>"
+
+    t=setTimeout('startTime()',1000)
+}
+
+function getWeek(today) {
+    var day = today.getDay();
+    var weekEnName = ["Sunday","Monday","Tuesday","Wenday","Thursday","Friday","Saturday"];
+    return weekEnName[day];
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+
+</script> 
+
+</head>
+
+
+
+<!-- <a href="http://www.w3school.com.cn">This is a link</a> -->
+
+<body bgcolor=#FFFFFF onload="startTime()">
+
+
+<div id="Time">
+    <h1>Time</h1>
+</div>
+
+<div id="Date">
+    <h5 align = 'center'>Time</h5>
+</div>
+
+<div id="menu">
+<h2>Menu</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</div>
+
+<div id="content" class="timer" align="center">
+
+    <div id="txt" size = 48></div>
+
+    <hr />
+
+    <h5 id = "currenttime" name = "currenttime">current time</h5>
+    <button onclick = "getValue()">start</button>
+
+
+</div>
+
+
+</body>
+
+</html>
