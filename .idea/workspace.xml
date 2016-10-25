@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66d275c3-c32e-4e4e-aa44-3e551276a0e0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/img01.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/photobrowser.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="66d275c3-c32e-4e4e-aa44-3e551276a0e0" name="Default" comment="" />
     <ignored path="myweb.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -182,12 +178,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477147146129</updated>
       <workItem from="1477147147355" duration="2949000" />
-      <workItem from="1477404185452" duration="1982000" />
+      <workItem from="1477404185452" duration="2383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4931000" />
+    <option name="totallyTimeSpent" value="5332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="783" extended-state="0" />
