@@ -1,2 +1,107 @@
-<h1>This is my web, I hope you like it</h1>
-<a href = "https://scratch.mit.edu">scratch</a>
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--这是一段注释。注释不会在浏览器中显示。-->
+
+<html>
+
+<head>
+
+    <style>
+        .banner {
+            font-size:48px;
+            color: #ff9955;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .clearfix { *zoom: 1;}
+        .clearfix:after{ content: ""; display: block; height: 0; visibility:hidden; clear: both;}
+
+        #header{ width: 96%; height: 90px; margin: 0 auto; background: #f60;}
+        #body{ width: 96%; margin: 0 auto;}
+        #aside{ float: left; width: 240px; background: #ccc;}
+        #main{ margin-left: 0px; background: floralwhite; }
+        #footer{ width: 96%; height: 90px; margin: 0 auto; background: #ffd9c5;}
+
+
+    </style>
+
+
+    <script>
+
+        function startTime()
+        {
+            var today=new Date()
+            var year = today.getFullYear()
+            var month = today.getMonth()
+            var date = today.getDate()
+
+            var h=today.getHours()
+            var m=today.getMinutes()
+            var s=today.getSeconds()
+            // add a zero in front of numbers<10
+            m=checkTime(m)
+            s=checkTime(s)
+            document.getElementById('Time').innerHTML="<h1 align = 'center'>" + h+":"+m+":"+s + "</h1>"
+            document.getElementById('Date').innerHTML="<h5 align = 'center'>" + month+"月"+date +"日"+ "  " + getWeek(today) + "</h5>"
+
+            t=setTimeout('startTime()',1000)
+        }
+
+        function getWeek(today) {
+            var day = today.getDay();
+            var weekEnName = ["Sunday","Monday","Tuesday","Wenday","Thursday","Friday","Saturday"];
+            return weekEnName[day];
+        }
+
+        function checkTime(i)
+        {
+            if (i<10)
+            {i="0" + i}
+            return i
+        }
+
+    </script>
+</head>
+
+<body bgcolor=#FFFFFF onload="startTime()">
+<div id="wrapper">
+    <div class="banner">
+        <div id="Time">
+            <h1>Time</h1>
+        </div>
+        <div id="Date">
+            <h5 align = 'center'>Time</h5>
+        </div>
+
+    </div>
+    <div id="body" class="clearfix">
+        <!--<div id="aside">-->
+            <!--<div class="inner">-->
+                <!--aside-->
+                <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div id="main">
+
+            <div class="inner">
+                李奕辰的网络学习入口
+                <br><br><br>
+                <a target="_blank" href="http://www.17zuoye.com/">去做英语作业</a>
+                <br><br><br>
+                <a target="_blank" href="http://www.giscoo.com.cn/">GES english home work</a>
+                <br><br><br>
+                <a target="_blank" href="http://www.weiqiok.com//">去做围棋死活题</a>
+                <br><br><br>
+                <a target="_blank" href="http://list.youku.com/albumlist/show/id_27308416.html?sf=10201&spm=a2h0k.8191403.0.0">去看peppa pig动画片</a>
+                <br><br><br>
+                <a target="_blank" href="./photobrowser/photobrowser.html">看照片</a>
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">footer</div>
+</div>
+</body>
