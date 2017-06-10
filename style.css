@@ -1,0 +1,14 @@
+      .banner {
+          font-size:48px;
+          color: #ff9955;
+          font-weight: bold;
+          text-align: center;
+      }
+      .clearfix { *zoom: 1;}
+      .clearfix:after{ content: ""; display: block; height: 0; visibility:hidden; clear: b    oth;}
+      #header{ width: 96%; height: 90px; margin: 0 auto; background: #f60;}
+      #body{ width: 96%; margin: 0 auto;}
+      #aside{ float: left; width: 240px; background: #ccc;}
+      #main{ margin-left: 0px; background: floralwhite; }
+      #footer{ width: 96%; height: 90px; margin: 0 auto; background: #ffd9c5;}
+      a {color:Blue; text-decoration:none}

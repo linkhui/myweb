@@ -1,0 +1,47 @@
+.header {
+   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-5/htmlcss1-img_canyon.jpeg");
+  background-repeat:repeat-x;
+  height: 400px;
+ /* background-position: center center; */
+  background-position:top;
+}
+
+#header-text {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 5%;
+  width: 60%;
+}
+
+body {
+  background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);
+}
+
+h1 {
+  color: White;
+  font-family: Playfair,Garamond,serif;
+  font-size: 100px;
+  line-height: 76px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+p {
+  font-family: Playfair,Garamond,serif;
+  font-size: 32px;
+}
+
+.main {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-5/shards.png")
+}
+
